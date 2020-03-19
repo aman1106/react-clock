@@ -60,8 +60,8 @@ class AnalogClock extends Component {
   renderClock = () => {
     return (
       <div className="react-clock__face">
-        <h6 style={{top: 30, position: 'absolute', left: 150, color: "#2a2a2a"}}>Made By:</h6>
-        <h6 style={{top: 220, position: 'absolute', left: 165, color: "#2a2a2a"}}>AMAN</h6>
+        <h6 className="text-top">Made By:</h6>
+        <h6 className="text-bottom" >AMAN</h6>
         {this.renderMinuteMarks()}
         {this.renderHourMarks()}
       </div>
@@ -123,7 +123,7 @@ class AnalogClock extends Component {
 
   render() {
     return (
-      <div style={{left: "40%", height: 400, width: 400, position: 'absolute'}}>
+      <div className="clock__analog">
         {this.renderClock()}
         {this.renderHourHand()}
         {this.renderMinuteHand()}

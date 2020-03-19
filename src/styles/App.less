@@ -24,3 +24,46 @@
 	padding: .6em 1.4em .5em .8em;
   border-radius: 4px;
 }
+
+.clock__analog {
+  left: 40%;
+  height: 400px;
+  width: 400px;
+  position: absolute;
+}
+
+.text-top {
+  top: 30px;
+  position: absolute;
+  left: 150px;
+  color: #2a2a2a;
+}
+
+.text-bottom {
+  top: 220px;
+  position: absolute;
+  left: 165px;
+  color: #2a2a2a;
+}
+
+@media only screen and (max-width: 576px) {
+  .clock__analog {
+    left: 25%;
+    height: 200px;
+    width: 200px;
+  }
+
+  .text-top {
+    top: 15px;
+    position: absolute;
+    left: 70px;
+    color: #2a2a2a;
+  }
+
+  .text-bottom {
+    top: 105px;
+    position: absolute;
+    left: 75px;
+    color: #2a2a2a;
+  }
+}
